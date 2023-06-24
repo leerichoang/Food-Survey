@@ -1,0 +1,113 @@
+** start of undefined **
+
+<!DOCTYPE htlm>
+<html lang="en">
+  <header>
+    <meta charset="UTF-8">
+    <link rel="stylesheet", href="styles.css">
+    <title>Is Food Good?</title>
+  </header>
+  
+  <body>
+    <div>
+    <h1 id="title">Is Food Good?</h1>
+    <p id="description">Tell me if you know if food is really good?</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label">Name: <input id="name" type="text" required placeholder="Name Please"/></label>
+        <label id="email-label">Email: <input id="email" type="email" required placeholder="Email Please"/></label>
+        <label id="number-label">How much foods you eat? <input id="number" type="number" min="1" max="10" required placeholder="FOOD"></label>
+        <label>Favorite type of food: <select id="dropdown" name="dropdown">
+          <option value="">(Select one)</option>
+          <option value="1">Asian</option>
+          <option value="2">other</option>
+          </select>
+      </fieldset>
+      <fieldset>
+        <label>Do you eat Food?</label>
+        <label><input value ="1" id="yes" type="radio" name="eater" class="inline">Yes</label>
+        <label><input value="0" id="no" type="radio" name="eater" class="inline">No</label>
+      </fieldset>
+      <fieldset>
+        <label>When do you eat?</label>
+        <label><input id="morning" type="checkbox" name="morning" value="1" class="inline">Morning</label>
+        <label><input id="noon" type="checkbox" name="noon" value="2" class="inline">Noon</label>
+        <label><input id="evening" type="checkbox" name="evening" value="3" class="inline">Evening</label>
+        <label for="foods">Provide a list of foods</label>
+        <textarea id="foods" name="foods" row="3" col="30" placehoder="Friedrice, Chinese, Asian..."></textarea>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit"/>
+    </form>
+    </div>
+  </body>
+  </html>
+
+** end of undefined **
+
+** start of undefined **
+
+body{
+  width: 100%;
+  height:100vh;
+  margin:0;
+  background-color: rgb(8,38,52);
+  color: white;
+  font-family: Arial;
+  font-size: 12px;
+    background-image: url('https://images.freeimages.com/images/large-previews/9c0/forest-1400475.jpg')
+}
+h1,p {
+  margin: 1em auto;
+  text-align:center;
+}
+div{
+    background: rgba(8,38,52,80%);
+    height: 700px;
+    width: 600px;
+    margin: 1em auto;
+    border: 3px solid white;
+}
+form{
+  width: 70vw;
+  margin:0 auto;
+  padding-bottom: 2em;
+}
+
+label{
+  display: block;
+  margin: .3rem 0;
+}
+
+fieldset{
+  border:none;
+  border-bottom: 3px solid rgb(30,40,80);
+  width: 500px;
+  text-align:left;
+  margin: auto;
+}
+input, textarea{
+  background-color: rgb(24,35,70);
+  color: white;
+  border: 1px solid white;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 400px;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: rgb(30,40,80);
+  border-color: white;
+  min-width: 300px;
+}
+
+.inline{
+  width: unset;
+  margin: 0 0 .5em 0 0;
+  vertical-align: middle;
+}
+
+
+** end of undefined **
+
